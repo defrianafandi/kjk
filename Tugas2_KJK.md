@@ -167,7 +167,9 @@ yang menguntungkan penyerang.
 - POST Process, dengan cara mengelabui user untuk mensubmit code tertentu yang diinginkan<br>
 attacker (code ini bisa dijalankan otomatis dengan menggunakan javascript).<br>
 <br>
+
 ![](img/2.png)
+
 <br>
 - Sumber: 9_Web_Exploits.pptx dan http://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
 <br>
@@ -197,7 +199,9 @@ Atau cara kerja SQL injection berikutnya adalah dengan mengganti password menjad
 yaitu password = ‘ OR 1=1’. Yang terjadi adalah pengguna“Hakim” tetap berhasil login ke sistem<br>
 karena inputan password tersebut merupakan kodel SQL yang menandakan bahwa proses login berhasil.<br>
 <br>
+
 ![](img/3.png)
+
 <br>
 - Sumber : https://www.nesabamedia.com/pengertian-sql-injection/<br>
 <br>
