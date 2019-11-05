@@ -12,7 +12,7 @@ Jawab :<br>
 Celah aplikasi web melibatkan cacat atau kelemahan sistem dalam aplikasi berbasis web<br>
 yang dapat dieksploitasi untuk membahayakan keamanan aplikasi.<br>
 <br>
-Sumber : https://www.veracode.com/security/web-application-vulnerabilities<br>
+- Sumber : https://www.veracode.com/security/web-application-vulnerabilities<br>
 <br>
 2. Jelaskan beberapa exploitasi yang dapat terjadi pada Web Apps!<br>
 Jawab :<br>
@@ -70,7 +70,7 @@ Aplikasi berbasis web yang digunakan user seringkali melakukan redirect dan forw
 bahkan website lain. Tindakan semacam ini, tanpa validasi yang benar, dapat mengarahkan user ke laman<br>
 phishing, malware, maupun menggunakannya untuk mengakses laman berbahaya lain.<br>
 <br>
-Sumber :https://blog.gamatechno.com/10-celah-keamanan-aplikasi-berbasis-web/
+- Sumber :https://blog.gamatechno.com/10-celah-keamanan-aplikasi-berbasis-web/
 
 3. Jelaskan maksud dari pesan HTTP pada paket data di bawah berikut!
 Jawab :<br>
@@ -118,6 +118,7 @@ Upgrade-Insecure-Requests: 1
 Permintaan untuk meningkatkan keamanan request menjadi https<br>
 <br>
 Sumber : 9_Web_Exploits.pptx<br>
+<br>
 
 ##### XSS
 1. Jelaskan apa yang dimaksud dengan XSS attack, sebutkan ciri - ciri serangannya! Note *tambahan : berikan secara visual proses serangan tersebut<br>
@@ -130,7 +131,7 @@ dapat mem-bypass keamanan di sisi klien, mendapatkan informasi sensitif, atau me
 Contoh gambar :<br>
 ![](img/1.png)
 <br>
-Sumber : https://upyes.wordpress.com/2013/05/18/pengertian-xss/ dan 9_Web_Exploits.pptx<br>
+- Sumber : https://upyes.wordpress.com/2013/05/18/pengertian-xss/ dan 9_Web_Exploits.pptx<br>
 
 2. Pada serangan XSS atau Cross Site Scripting, terdapat script yang dapat dilakukan serangan, berikan penjelasan pada script xss attack injection berikut:<br>
 Jawab:<br>
@@ -150,7 +151,7 @@ menampung cookie nya. Mekanismenya yaitu, web tersebut akan membaca script terse
 berisi sebuah gambar namun ketika gambar tersebut di load oleh user maka gambar yang berisi<br>
 script tadi akan mengembalikan cookie user melalui website yang sudah di sisipkan.<br>
 <br>
-Sumber: 9_Web_Exploits.pptx <br>
+- Sumber: 9_Web_Exploits.pptx <br>
 
 ##### CSRF & SQL Injection
 1. Jelaskan proses kerja dari serangan Cross-Site Request Forgery (CSRF). Note: *tambahan, berikan secara visual proses serangan tersebut<br>
@@ -164,7 +165,7 @@ attacker (code ini bisa dijalankan otomatis dengan menggunakan javascript).<br>
 <br>
 ![](img/2.png)
 <br>
-Sumber: 9_Web_Exploits.pptx dan http://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
+- Sumber: 9_Web_Exploits.pptx dan http://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
 
 2. Jelaskan proses serangan pada SQL injection! Note: *tambahan, berikan secara visual proses serangan tersebut<br>
 Jawab :<br>
@@ -177,6 +178,7 @@ yang hanya dapat berupa karakter angka dan huruf. Sedangkan user memasukkan kara
 seperti petik tunggal (‘), strip (-) atau tanda (=). Karakter-karakter tersebut merupakan bagian<br>
 dari perintah umum yang digunakan untuk dapat berinteraksi dengan database. Keadaan itulah yang<br>
 dimanfaatkan oleh penyerang untuk dapat mengakses informasi yang tersimpan didalam database.<br>
+<br>
 Cara kerja sql injection yaitu hacker akan mencoba mencari sebuah website yang sekiranya<br>
 keamanan pada website tersebut lemah atau terdapat celah yang bisa di hack website nya. Caranya<br>
 yaitu memasukan sebuah sql pada form login yang berisi untuk mengakses database nya, atau berisi<br>
@@ -189,6 +191,11 @@ maka username Hakim dapat tetap input ke sistem tanpa harus mengetahui password 
 Atau cara kerja SQL injection berikutnya adalah dengan mengganti password menjadi kode SQL,<br>
 yaitu password = ‘ OR 1=1’. Yang terjadi adalah pengguna“Hakim” tetap berhasil login ke sistem<br>
 karena inputan password tersebut merupakan kodel SQL yang menandakan bahwa proses login berhasil.<br>
+<br>
+![](img/3.png)
+<br>
+- Sumber : https://www.nesabamedia.com/pengertian-sql-injection/<br>
+<br>
 3. Pada serangan SQL injection, beberapa payload yang di lakukan oleh attacker *di bawah. berikan penjelasan mengenai payload SQL Injection tersebut beserta dengan SQL query statement:
 
 ```
@@ -198,17 +205,13 @@ http://website-target.com/?id=%27+union+all+select+system_user%28%29%2Cuser%28%2
 ```
 ' union all select system_user(),user() #
 ```
-
-
-#### NOTE: 
-Kerjakan tugas berikut dengan seksama dan tulis dalam bentuk dokumen digital (.pdf). Soal tersedia dalam bentuk lampiran
-
-Aturan:
-- lihat batas tanggal pengumpulan tugas
-- silahkan didownload dan kerjakan, kemudian upload berkas anda ke google classroom ini.
-- untuk upload file tugas dengan format : nim[dot]pdf, <b>tidak dianjurkan dalam format doc, docx, karena dalam beberapa kasus, format nya berantakan ketika di baca menggunakan google doc</b>
-- cantumkan referensi, website, buku.
-
-<b>WARNING: tidak boleh plagiat, duplikasi dengan mahasiswa lainnya, misalkan jawaban sama, cuma berbeda Nama dan NIM, 
-maka jika terjadi hal tersebut akan mendapatkan nilai 0 atau di kurangi</b>
-
+Jawab :<br>
+Kedua payload tersebut sebenarnya mempunyai maksud yang sama, pada payload yang pertama melakukan<br>
+sql injection pada sebuah website ,sedangkan pada payload kedua malakukan syntax query sql.<br>
+Pada payload pertama pada bagian id itu sebenernya jika kita decode html nya maka hasilnya sama<br>
+dengan payload yang kedua, hanya saja bentuk pada payload pertama seperti itu karena pada payload<br>
+pertama itu bentuknya url maka dalam url tidak boleh ada symbol petik (‘) koma (,) dan simbol-simbol<br>
+lainnya yang dilarang dalam url. Pada parameter id tersebut bertujuan untuk mengetahui system apa<br>
+yang di gunakan pada server tersebut. Jadi kedua query statement tersebut memiliki tujuan yang sama,<br>
+yaitu untuk mengetahui informasi sistem apa yang dipakai pada server tersebut, mengetahui informasi<br>
+system user dan user nya.<br>
