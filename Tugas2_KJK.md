@@ -14,6 +14,7 @@ yang dapat dieksploitasi untuk membahayakan keamanan aplikasi.<br>
 <br>
 - Sumber : https://www.veracode.com/security/web-application-vulnerabilities<br>
 <br>
+
 2. Jelaskan beberapa exploitasi yang dapat terjadi pada Web Apps!<br>
 Jawab :<br>
 Beberapa exploitasi yang dapat terjadi pada Web Apps adalah sebagai berikut :<br>
@@ -70,7 +71,8 @@ Aplikasi berbasis web yang digunakan user seringkali melakukan redirect dan forw
 bahkan website lain. Tindakan semacam ini, tanpa validasi yang benar, dapat mengarahkan user ke laman<br>
 phishing, malware, maupun menggunakannya untuk mengakses laman berbahaya lain.<br>
 <br>
-- Sumber :https://blog.gamatechno.com/10-celah-keamanan-aplikasi-berbasis-web/
+- Sumber :https://blog.gamatechno.com/10-celah-keamanan-aplikasi-berbasis-web/<br>
+<br>
 
 3. Jelaskan maksud dari pesan HTTP pada paket data di bawah berikut!
 Jawab :<br>
@@ -132,6 +134,7 @@ Contoh gambar :<br>
 ![](img/1.png)
 <br>
 - Sumber : https://upyes.wordpress.com/2013/05/18/pengertian-xss/ dan 9_Web_Exploits.pptx<br>
+<br>
 
 2. Pada serangan XSS atau Cross Site Scripting, terdapat script yang dapat dilakukan serangan, berikan penjelasan pada script xss attack injection berikut:<br>
 Jawab:<br>
@@ -152,6 +155,7 @@ berisi sebuah gambar namun ketika gambar tersebut di load oleh user maka gambar 
 script tadi akan mengembalikan cookie user melalui website yang sudah di sisipkan.<br>
 <br>
 - Sumber: 9_Web_Exploits.pptx <br>
+<br>
 
 ##### CSRF & SQL Injection
 1. Jelaskan proses kerja dari serangan Cross-Site Request Forgery (CSRF). Note: *tambahan, berikan secara visual proses serangan tersebut<br>
@@ -166,6 +170,7 @@ attacker (code ini bisa dijalankan otomatis dengan menggunakan javascript).<br>
 ![](img/2.png)
 <br>
 - Sumber: 9_Web_Exploits.pptx dan http://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)
+<br>
 
 2. Jelaskan proses serangan pada SQL injection! Note: *tambahan, berikan secara visual proses serangan tersebut<br>
 Jawab :<br>
@@ -196,6 +201,7 @@ karena inputan password tersebut merupakan kodel SQL yang menandakan bahwa prose
 <br>
 - Sumber : https://www.nesabamedia.com/pengertian-sql-injection/<br>
 <br>
+
 3. Pada serangan SQL injection, beberapa payload yang di lakukan oleh attacker *di bawah. berikan penjelasan mengenai payload SQL Injection tersebut beserta dengan SQL query statement:
 
 ```
@@ -215,3 +221,4 @@ lainnya yang dilarang dalam url. Pada parameter id tersebut bertujuan untuk meng
 yang di gunakan pada server tersebut. Jadi kedua query statement tersebut memiliki tujuan yang sama,<br>
 yaitu untuk mengetahui informasi sistem apa yang dipakai pada server tersebut, mengetahui informasi<br>
 system user dan user nya.<br>
+<br>
